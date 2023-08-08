@@ -54,6 +54,18 @@ tasks = {
   ["Slate Stone Guardian"] = "53",
   ["Azure Stone Guardian"] = "54",
   ["Crimson Stone Guardian"] = "55",
+  ["Mavundani"] = "56",
+  ["Glacial Sabertooth"] = "57",
+  ["Visage of the Roaring Soul"] = "58",
+  ["Azure Arachnox"] = "59",
+  ["Golden Ooze Crawler"] = "60",
+  ["Shadowflame Visage"] = "61",
+  ["Phantomlight Leviathan"] = "62",
+  ["Verdant Clawbeast"] = "63",
+  ["Obsidian Slithermire"] = "64",
+  ["Darkfire Dracolich"] = "65",
+  ["Bristlehorn Behemoth"] = "66",
+  ["Crimson Abyssal Tendriler"] = "67"
 }
 
 -- function to send commands
