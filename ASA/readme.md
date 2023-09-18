@@ -1,7 +1,7 @@
 1. Put all waypoints into this path:
 C:\Users\YOUR USERNAME\AppData\Roaming\OTClientV8\EmpearlOT\bot\YOUR BOT PROFILE\cavebot_configs
 
-2. Put the 3 lua macros into this path:
+2. Put the lua macro into this path:
 C:\Users\YOUR USERNAME\AppData\Roaming\OTClientV8\EmpearlOT\bot\YOUR BOT PROFILE\
 
 3. Enter ASA manually, then find which instance you are in by checking minimap:
