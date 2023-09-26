@@ -1,3 +1,7 @@
+-- Misc tab
+setDefaultTab("Misc")
+UI.Label("Tasking")
+
 tasks = {
   ["Aria"] = "1",
   ["Apekin"] = "2",
@@ -65,7 +69,18 @@ tasks = {
   ["Obsidian Slithermire"] = "64",
   ["Darkfire Dracolich"] = "65",
   ["Bristlehorn Behemoth"] = "66",
-  ["Crimson Abyssal Tendriler"] = "67"
+  ["Crimson Abyssal Tendriler"] = "67",
+  ["Stonebark"] = "68",
+  ["Deepthorn"] = "69",
+  ["Moonshadow"] = "70",
+  ["Thundermaw"] = "71",
+  ["Emberflare"] = "72",
+  ["Gravewalker"] = "73",
+  ["Voidshifter"] = "74",
+  ["Cragheart"] = "75",
+  ["Stonebiter"] = "76",
+  ["Grimshadow"] = "77",
+  ["Mageborn"] = "78"
 }
 
 -- function to send commands
@@ -86,24 +101,26 @@ end)
 addTextEdit("Monster Name2", storage.monsterName2 or "Monster Name2", function(widget, text) 
     storage.monsterName2 = text
 end)
-    
-macro(10000,"AutoTasker_v3",function()
-    monsterIds = {tonumber(tasks[storage.monsterName1]),
-                tonumber(tasks[storage.monsterName2])}
-    
-    for i = 1, #monsterIds do
-        -- Try to start task
-    modules.game_tasks.sendOpcode({
-        action = 'start',
-        entry = monsterIds[i]
-        }
-    )
-        -- Try to finish task
-    modules.game_tasks.sendOpcode({
-        action = 'finish',
-        entry = monsterIds[i]
-        }
-    )
-    end
+	
+macro(10000,"Auto Tasker",function()
+	monsterIds = {tonumber(tasks[storage.monsterName1]),
+				tonumber(tasks[storage.monsterName2])}
+	
+	for i = 1, #monsterIds do
+    	-- Try to start task
+	modules.game_tasks.sendOpcode({
+		action = 'start',
+		entry = monsterIds[i]
+		}
+	)
+		-- Try to finish task
+	modules.game_tasks.sendOpcode({
+		action = 'finish',
+		entry = monsterIds[i]
+		}
+	)
+	end
 end
 )
+
+UI.Separator()
